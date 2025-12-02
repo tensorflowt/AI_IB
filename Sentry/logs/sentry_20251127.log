@@ -1,0 +1,571 @@
+2025-11-27 07:22:45.964 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 07:22:45.964 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 07:22:45.967 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9992/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9992/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9992/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9992/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 07:28:23.433 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 07:28:23.433 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 07:28:28.436 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:28:33.439 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:28:38.446 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:28:43.453 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:28:48.460 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:28:53.438 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:141] | Failed to perform, curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:28:53.439 | INFO     | [ApiServer.api_server:register_inference:34] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 07:28:53.442 | INFO     | [Manager.register:register:97] | Re-registering instance test_prefill_wzs, replacing info
+2025-11-27 07:28:53.442 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 07:28:53.443 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 07:28:53.465 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:28:58.446 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:28:58.447 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:28:58.471 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:28:58.472 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:28:59.449 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:28:59.474 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:29:00.450 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:29:00.476 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:29:01.452 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:29:01.477 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:29:02.454 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:29:02.479 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:31:37.558 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 07:31:37.558 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 07:31:37.559 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9992/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9992/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9992/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9992/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 07:31:37.562 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:50:43.166 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 07:50:43.166 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 07:50:43.170 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9992/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9992/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9992/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9992/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 07:51:05.865 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 07:51:05.866 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 07:51:05.868 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:132] | execute register_pod_to_nexuts
+2025-11-27 07:51:05.868 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:135] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 2, 'step': 1, 'sentry_id': 'wpB1iNIomVqEd', 'sentry_port': 9992}
+2025-11-27 07:51:10.872 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:15.879 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:20.886 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:25.893 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:30.900 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:35.871 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:142] | Failed to perform, curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:51:35.871 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 07:51:35.874 | INFO     | [Manager.register:register:97] | Re-registering instance test_prefill_wzs, replacing info
+2025-11-27 07:51:35.875 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 07:51:35.875 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 07:51:35.876 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:132] | execute register_pod_to_nexuts
+2025-11-27 07:51:35.876 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:135] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 2, 'step': 1, 'sentry_id': 'wpB1iNIomVqEd', 'sentry_port': 9992}
+2025-11-27 07:51:35.907 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:40.882 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:40.914 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:45.889 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:45.920 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:50.893 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:50.926 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:55.900 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:51:55.933 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:52:00.907 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:52:00.937 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:52:05.879 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:142] | Failed to perform, curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:05.879 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 07:52:05.881 | INFO     | [Manager.register:register:97] | Re-registering instance test_prefill_wzs, replacing info
+2025-11-27 07:52:05.882 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 07:52:05.882 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 07:52:05.883 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:132] | execute register_pod_to_nexuts
+2025-11-27 07:52:05.883 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:135] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 2, 'step': 1, 'sentry_id': 'wpB1iNIomVqEd', 'sentry_port': 9992}
+2025-11-27 07:52:05.914 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:52:05.943 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:52:10.888 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:10.889 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:10.920 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:10.921 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:10.949 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:10.950 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:11.890 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:11.923 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:11.952 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:12.892 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:12.925 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:12.954 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:13.894 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:13.927 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:13.956 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:14.896 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:14.929 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:52:14.957 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:53:58.720 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 07:53:58.720 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 07:53:58.724 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 07:54:22.079 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 07:54:22.079 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 07:54:22.082 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:132] | execute register_pod_to_nexuts
+2025-11-27 07:54:22.083 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:135] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 2, 'step': 1, 'sentry_id': 'RwJ1MEiUtyppc', 'sentry_port': 9992}
+2025-11-27 07:54:22.091 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 07:54:27.086 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 07:54:32.093 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:54:32.094 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 07:54:33.096 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 08:23:53.665 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 08:23:53.666 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 08:23:53.670 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 08:24:52.324 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 08:24:52.324 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 08:24:52.327 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:132] | execute register_pod_to_nexuts
+2025-11-27 08:24:52.327 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:135] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 2, 'step': 1, 'sentry_id': 'ca2QC32AYDBRn', 'sentry_port': 9992}
+2025-11-27 08:24:52.336 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 08:24:57.329 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 08:25:02.336 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 08:25:07.344 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 08:44:14.200 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 08:44:14.200 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 08:44:14.204 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 08:44:38.255 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 08:44:38.255 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 08:44:38.258 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:132] | execute register_pod_to_nexuts
+2025-11-27 08:44:38.258 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:135] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 2, 'step': 1, 'sentry_id': 'tTFlxkzaVwEKe', 'sentry_port': 9992}
+2025-11-27 08:44:38.266 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 08:44:43.262 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 08:44:48.268 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 08:49:24.953 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 08:49:24.953 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 08:49:24.956 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 08:49:49.725 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 08:49:49.726 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 08:49:49.728 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:132] | execute register_pod_to_nexuts
+2025-11-27 08:49:49.728 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:135] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 2, 'step': 1, 'sentry_id': 'N0Ugp1eDJth95', 'sentry_port': 9992}
+2025-11-27 08:49:49.736 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 08:49:49.990 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:240] | Sentry to Nexuts:{'sentry_ops_id': 108, 'timestamp': 1764233389.7096355, 'sentry_instance_id': 'vx268Tv5E6PkQ', 'updates': [{'instance_id': '88884443', 'ops_id': 10, 'insert_key': [0, 1, 2, 3]}]}
+2025-11-27 08:49:54.731 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 08:49:54.732 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 08:49:55.734 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 08:57:56.616 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 08:57:56.616 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 08:57:56.617 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 08:57:56.619 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 108
+2025-11-27 08:57:56.619 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 108
+2025-11-27 08:57:56.620 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 08:58:11.983 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 08:58:11.983 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 08:58:11.987 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 08:58:11.988 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 108
+2025-11-27 08:58:11.989 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 108
+2025-11-27 09:00:18.555 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 09:00:18.555 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 09:00:32.124 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 09:00:32.124 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 09:00:32.127 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 09:00:32.127 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 09:00:32.128 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 09:00:58.121 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 09:00:58.122 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 09:00:58.124 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 09:00:58.125 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 2, 'step': 1, 'sentry_id': '0cP7g5irpXS4k', 'sentry_port': 9992}
+2025-11-27 09:00:58.133 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 09:06:48.584 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 09:06:48.584 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 09:06:48.587 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 09:06:48.587 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 09:06:48.588 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 09:06:48.589 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 09:40:44.878 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 09:40:44.878 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 09:40:44.883 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 09:40:44.883 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 09:40:44.884 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 09:41:19.111 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 09:41:19.111 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 09:41:19.114 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 09:41:19.114 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 2, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-27 09:41:19.123 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 09:41:19.928 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:242] | sentry_ops_id:110  item:{'sentry_ops_id': 110, 'timestamp': 1764236479.7982857, 'sentry_instance_id': 'vx268Tv5E6PkQ', 'updates': [{'instance_id': '88884443', 'ops_id': 12, 'insert_key': [0, 1, 2, 3]}]}
+2025-11-27 11:27:47.969 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 11:27:47.970 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 11:28:14.798 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 11:28:14.798 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 11:28:14.801 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 11:28:14.801 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 11:28:14.802 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 11:30:25.633 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 11:30:25.633 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 11:30:25.636 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6379
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 11:30:25.636 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 11:30:25.636 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 12:00:43.953 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 12:00:43.954 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 12:00:43.956 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 12:00:43.956 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-27 12:00:43.967 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 12:00:44.788 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:243] | sentry_ops_id:111  item:{'sentry_ops_id': 111, 'timestamp': 1764244844.1270401, 'sentry_instance_id': 'vx268Tv5E6PkQ', 'updates': [{'instance_id': '88884443', 'ops_id': 13, 'insert_key': [0, 1, 2, 3]}]}
+2025-11-27 12:00:48.960 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:10:28.308 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 12:10:28.309 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 12:10:28.311 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 12:10:28.311 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 12:10:28.312 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 12:10:28.313 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 12:10:37.551 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 12:10:37.551 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 12:10:37.556 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 12:10:37.556 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 12:10:37.557 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 12:11:04.566 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 12:11:04.567 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 12:11:04.569 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 12:11:04.569 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-27 12:11:04.578 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 12:11:09.573 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:11:14.580 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:11:19.582 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:11:24.585 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:11:29.592 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:11:34.600 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:11:39.607 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:11:44.611 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 12:11:44.612 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 12:11:45.614 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-27 12:13:44.864 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 12:13:44.864 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 12:13:44.869 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 12:13:44.869 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 12:13:44.869 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 12:14:11.354 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 12:14:11.354 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 12:14:11.357 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 12:14:11.357 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-27 12:14:11.367 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 12:14:16.361 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:14:21.366 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:14:26.372 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:14:31.378 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:14:36.382 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:14:41.389 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:14:46.397 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:14:51.402 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:14:56.405 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:15:01.408 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:15:06.412 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:15:11.420 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:15:16.427 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:15:21.435 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:15:26.442 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:15:31.448 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:19:10.847 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 12:19:10.848 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 12:19:10.852 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 12:19:10.853 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 12:19:10.853 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 12:20:18.247 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 12:20:18.248 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 12:20:18.250 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 12:20:18.251 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-27 12:20:18.259 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 12:20:18.270 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-27T12:20:18.267270+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:20:18.270 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-27T12:20:18.267270+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:20:18.270 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-27 12:20:18.271 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-27T12:20:18.267270+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:20:18.271 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-27 12:20:18.272 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-27 12:20:18.272 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-27 12:20:18.272 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-27 12:20:23.255 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:20:28.262 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:25:11.162 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 12:25:11.163 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 12:25:11.167 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 12:25:11.168 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 12:25:11.168 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 12:25:33.696 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 12:25:33.696 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 12:25:33.699 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 12:25:33.699 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-27 12:25:33.707 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 12:25:33.716 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-27T12:25:33.713064+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:25:33.716 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-27T12:25:33.713064+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:25:33.716 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-27 12:25:33.717 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-27T12:25:33.713064+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:25:33.717 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-27 12:25:33.718 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-27 12:25:33.718 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-27 12:25:33.718 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-27 12:25:34.191 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:224] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-27 12:25:34.191', 'sentry_instance_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'prompt': [0, 1, 2, 3], 'prompt_value': None}]}
+2025-11-27 12:25:34.195 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:243] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-27 12:25:34.191', 'sentry_instance_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'prompt': [0, 1, 2, 3], 'prompt_value': None}]}
+2025-11-27 12:25:38.702 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:29:43.235 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 12:29:43.235 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 12:29:43.240 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 12:29:43.241 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 12:29:43.241 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 12:30:16.318 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 12:30:16.319 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 12:30:16.321 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 12:30:16.322 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-27 12:30:16.330 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 12:30:16.342 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-27T12:30:16.339546+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:30:16.342 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-27T12:30:16.339546+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:30:16.342 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-27 12:30:16.343 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-27T12:30:16.339546+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:30:16.344 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-27 12:30:16.345 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-27 12:30:16.345 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-27 12:30:16.345 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-27 12:30:17.276 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:224] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-27 12:30:17.276', 'sentry_instance_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'prompt': [0, 1, 2, 3], 'prompt_value': None}]}
+2025-11-27 12:30:17.282 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:243] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-27 12:30:17.276', 'sentry_instance_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'prompt': [0, 1, 2, 3], 'prompt_value': None}]}
+2025-11-27 12:30:21.325 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:32:34.934 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 12:32:34.934 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 12:32:34.939 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 12:32:34.940 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 12:32:34.940 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 12:33:00.646 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 12:33:00.647 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 12:33:00.649 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 12:33:00.649 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-27 12:33:00.658 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 12:33:00.669 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-27T12:33:00.666427+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:33:00.669 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-27T12:33:00.666427+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:33:00.670 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-27 12:33:00.670 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-27T12:33:00.666427+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:33:00.671 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-27 12:33:00.672 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-27 12:33:00.672 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-27 12:33:00.672 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-27 12:33:00.967 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:224] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-27 12:33:00.967', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'prompt': [0, 1, 2, 3], 'prompt_value': None}]}
+2025-11-27 12:33:00.973 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:243] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-27 12:33:00.967', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'prompt': [0, 1, 2, 3], 'prompt_value': None}]}
+2025-11-27 12:33:05.653 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:33:10.661 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:33:15.666 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-27 12:33:58.837 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-27 12:33:58.837 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-27 12:33:58.841 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-27 12:33:58.842 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-27 12:33:58.842 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-27 12:34:37.362 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-27 12:34:37.362 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-27 12:34:37.365 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-27 12:34:37.365 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-27 12:34:37.373 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-27 12:34:37.387 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-27T12:34:37.384411+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:34:37.387 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-27T12:34:37.384411+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:34:37.387 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-27 12:34:37.388 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-27T12:34:37.384411+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-27 12:34:37.388 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-27 12:34:37.389 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-27 12:34:37.389 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-27 12:34:37.389 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-27 12:34:37.881 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:224] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-27 12:34:37.881', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'prompt': [0, 1, 2, 3], 'prompt_value': None}]}
+2025-11-27 12:34:37.892 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:243] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-27 12:34:37.881', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'prompt': [0, 1, 2, 3], 'prompt_value': None}]}
+2025-11-27 12:34:42.369 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200

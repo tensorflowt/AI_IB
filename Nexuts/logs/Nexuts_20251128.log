@@ -1,0 +1,304 @@
+2025-11-28 03:19:41.755 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:19:41.756 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 03:19:41.757 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 03:19:41.758 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 03:19:41.763 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 03:20:06.391 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:20:06.391 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 03:20:06.392 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 03:20:06.393 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 03:20:06.394 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 03:20:27.066 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 03:20:27.069 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300027.0691922}
+2025-11-28 03:20:32.076 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300032.076153}
+2025-11-28 03:20:36.393 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 03:20:37.084 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300037.0834396}
+2025-11-28 03:20:42.091 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300042.0904753}
+2025-11-28 03:20:47.096 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300047.0958092}
+2025-11-28 03:20:52.103 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300052.1029522}
+2025-11-28 03:20:57.110 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300057.1099868}
+2025-11-28 03:21:02.117 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300062.117059}
+2025-11-28 03:21:06.396 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 03:21:07.124 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300067.124104}
+2025-11-28 03:24:10.796 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:24:10.796 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 03:24:10.797 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 03:24:10.798 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 03:24:10.806 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 03:24:40.799 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 03:24:46.301 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 03:24:46.306 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300286.3054175}
+2025-11-28 03:24:51.313 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300291.3128836}
+2025-11-28 03:24:56.319 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300296.318484}
+2025-11-28 03:28:13.149 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:28:13.149 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 03:28:13.151 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 03:28:13.151 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 03:28:13.157 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 03:28:35.170 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 03:28:35.173 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300515.1731586}
+2025-11-28 03:28:40.180 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300520.1800592}
+2025-11-28 03:28:43.152 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 03:28:45.186 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300525.1856604}
+2025-11-28 03:28:50.193 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300530.1927576}
+2025-11-28 03:35:37.351 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:35:37.351 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 03:35:37.352 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 03:35:37.353 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 03:35:37.358 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 03:36:00.044 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 03:36:00.047 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300960.0467272}
+2025-11-28 03:36:05.054 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764300965.0536494}
+2025-11-28 03:36:07.356 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 03:40:31.264 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:40:31.265 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 03:40:31.266 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 03:40:31.267 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 03:40:31.272 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 03:40:53.575 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 03:40:53.578 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764301253.5778856}
+2025-11-28 03:40:55.560 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 03:40:54.554', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 03:40:58.584 | INFO     | [Sentry_manager.Sentry:_ping:54] | [Heartbeat] http://172.16.16.63:9992/v1/health FAILED ❌: Failed to perform, curl: (7) Failed to connect to 172.16.16.63 port 9992 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:50:12.108 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:50:12.108 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 03:50:12.109 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 03:50:12.110 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 03:50:12.114 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 03:50:34.975 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 03:50:34.979 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764301834.9783726}
+2025-11-28 03:50:36.934 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 03:50:35.930', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 03:50:39.983 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764301839.9823353}
+2025-11-28 03:50:42.110 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 04:52:58.898 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 04:52:58.899 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 04:52:58.900 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 04:52:58.901 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 04:52:58.905 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 04:53:20.799 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 04:53:20.802 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764305600.8014233}
+2025-11-28 04:53:20.822 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 04:53:20.818', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:53:25.804 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764305605.8037953}
+2025-11-28 04:53:28.901 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 04:53:30.811 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764305610.81081}
+2025-11-28 04:55:46.839 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 04:55:46.840 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 04:55:46.841 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 04:55:46.842 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 04:55:46.847 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 04:56:09.656 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 04:56:09.659 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764305769.6588032}
+2025-11-28 04:56:10.653 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 04:56:10.647', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:56:14.666 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764305774.6657195}
+2025-11-28 04:56:16.842 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 04:56:19.673 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764305779.6727173}
+2025-11-28 04:56:24.675 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764305784.6752944}
+2025-11-28 04:58:05.130 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 04:58:05.130 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 04:58:05.131 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 06:17:33.289 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 06:17:33.290 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 06:17:33.290 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 06:17:33.292 | INFO     | [persistence.snap_manager:load_snapshot:178] | Loading snapshot snapshot_data [{'id': 0, 'key': None, 'value': None, 'decode_string': None, 'children': [1], 'version': 0}, {'id': 1, 'key': [0, 1, 2, 3], 'value': {'test_prefill_wzs': [1, 2, 3, 4]}, 'decode_string': None, 'children': [], 'version': 0}]
+2025-11-28 06:28:20.893 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 06:28:20.894 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 06:28:20.895 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 06:28:20.896 | INFO     | [persistence.snap_manager:load_snapshot:178] | Loading snapshot snapshot_data [{'id': 0, 'key': None, 'value': None, 'decode_string': None, 'children': [1], 'version': 0}, {'id': 1, 'key': [0, 1, 2, 3], 'value': {'test_prefill_wzs': [1, 2, 3, 4]}, 'decode_string': None, 'children': [], 'version': 0}]
+2025-11-28 06:28:20.897 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 1 个 sentry 节点
+2025-11-28 06:28:20.901 | INFO     | [Sentry_manager.Sentry:_ping:54] | [Heartbeat] http://172.16.16.63:9992/v1/health FAILED ❌: Failed to perform, curl: (7) Failed to connect to 172.16.16.63 port 9992 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 06:55:00.852 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 06:55:00.853 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 06:55:00.854 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 06:55:00.855 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 06:55:00.860 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 06:55:30.855 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 06:55:40.086 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 06:55:40.089 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312940.0885568}
+2025-11-28 06:55:41.461 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 06:55:40.461', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 06:55:45.096 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312945.0956237}
+2025-11-28 06:55:50.101 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312950.1004198}
+2025-11-28 06:55:55.105 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312955.105195}
+2025-11-28 06:56:00.109 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312960.1083157}
+2025-11-28 06:56:00.858 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 06:56:05.116 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312965.1154907}
+2025-11-28 06:56:10.123 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312970.1225665}
+2025-11-28 06:56:15.126 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312975.1262555}
+2025-11-28 06:56:20.134 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312980.1333904}
+2025-11-28 06:56:25.141 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312985.14052}
+2025-11-28 06:56:30.148 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312990.147679}
+2025-11-28 06:56:30.861 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 06:56:35.155 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764312995.15493}
+2025-11-28 06:56:40.162 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764313000.1619132}
+2025-11-28 07:13:08.254 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 07:13:08.254 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 07:13:08.255 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 07:13:08.256 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 07:13:08.261 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 07:13:30.630 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 07:13:30.634 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764314010.633365}
+2025-11-28 07:13:30.767 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 07:13:30.758', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 07:13:35.641 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764314015.6403682}
+2025-11-28 08:50:59.058 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 08:50:59.059 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 08:50:59.060 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 08:50:59.061 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 08:50:59.065 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 08:51:23.763 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 08:51:23.766 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319883.765745}
+2025-11-28 08:51:23.891 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 08:51:23.880', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 08:51:28.769 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319888.768374}
+2025-11-28 08:51:29.061 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:51:33.776 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319893.7754338}
+2025-11-28 08:51:38.783 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319898.7824752}
+2025-11-28 08:51:43.790 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319903.789548}
+2025-11-28 08:51:48.797 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319908.7966485}
+2025-11-28 08:51:53.804 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319913.8037355}
+2025-11-28 08:51:58.811 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319918.810846}
+2025-11-28 08:51:59.064 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:52:03.818 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319923.8179557}
+2025-11-28 08:52:08.825 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319928.8250628}
+2025-11-28 08:52:13.832 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319933.8321133}
+2025-11-28 08:52:18.839 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319938.8392105}
+2025-11-28 08:52:23.847 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319943.8463461}
+2025-11-28 08:52:28.854 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319948.8534558}
+2025-11-28 08:52:29.066 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:52:33.860 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319953.859841}
+2025-11-28 08:52:38.864 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319958.863829}
+2025-11-28 08:52:43.871 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319963.8708851}
+2025-11-28 08:52:48.878 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319968.8779073}
+2025-11-28 08:52:53.885 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319973.8849585}
+2025-11-28 08:52:58.892 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319978.8920295}
+2025-11-28 08:52:59.069 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:53:03.899 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319983.8991556}
+2025-11-28 08:53:08.906 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319988.9062495}
+2025-11-28 08:53:13.914 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319993.9133706}
+2025-11-28 08:53:18.921 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764319998.9204133}
+2025-11-28 08:53:23.927 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320003.926514}
+2025-11-28 08:53:28.932 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320008.9318278}
+2025-11-28 08:53:29.072 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:53:33.935 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320013.9343426}
+2025-11-28 08:53:38.942 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320018.9414477}
+2025-11-28 08:53:43.949 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320023.9489703}
+2025-11-28 08:53:48.956 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320028.9561334}
+2025-11-28 08:53:53.963 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320033.963211}
+2025-11-28 08:53:58.967 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320038.9665408}
+2025-11-28 08:53:59.074 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:54:03.971 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320043.9706676}
+2025-11-28 08:54:08.974 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320048.9740007}
+2025-11-28 08:54:13.979 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320053.9791846}
+2025-11-28 08:54:18.986 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320058.9862382}
+2025-11-28 08:54:23.994 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320063.9932885}
+2025-11-28 08:54:29.000 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320068.9998174}
+2025-11-28 08:54:29.077 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:54:34.006 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320074.0060344}
+2025-11-28 08:54:39.013 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320079.013111}
+2025-11-28 08:54:44.020 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320084.020129}
+2025-11-28 08:54:49.027 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320089.027223}
+2025-11-28 08:54:54.032 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320094.0314684}
+2025-11-28 08:54:59.039 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320099.038508}
+2025-11-28 08:54:59.084 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:55:04.046 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320104.0456164}
+2025-11-28 08:55:09.050 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320109.049773}
+2025-11-28 08:55:14.057 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320114.0568428}
+2025-11-28 08:55:19.061 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320119.0598676}
+2025-11-28 08:55:24.067 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320124.0670445}
+2025-11-28 08:55:29.070 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320129.0694048}
+2025-11-28 08:55:29.087 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:55:34.076 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320134.075806}
+2025-11-28 08:55:39.083 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320139.0823324}
+2025-11-28 08:55:44.090 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320144.0894995}
+2025-11-28 08:55:49.097 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320149.0967133}
+2025-11-28 08:55:54.104 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320154.1037993}
+2025-11-28 08:55:59.090 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:55:59.111 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320159.110899}
+2025-11-28 08:56:04.118 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320164.1178691}
+2025-11-28 08:56:09.125 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320169.1250057}
+2025-11-28 08:56:14.132 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320174.1321387}
+2025-11-28 08:56:19.137 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320179.135998}
+2025-11-28 08:56:24.139 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320184.1389449}
+2025-11-28 08:56:29.093 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:56:29.144 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320189.1438746}
+2025-11-28 08:56:34.151 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320194.150974}
+2025-11-28 08:56:39.158 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320199.1580408}
+2025-11-28 08:56:44.161 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320204.1609545}
+2025-11-28 08:56:49.168 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320209.167815}
+2025-11-28 08:56:54.172 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320214.1718903}
+2025-11-28 08:56:59.096 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:56:59.174 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320219.1741822}
+2025-11-28 08:57:04.177 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320224.1765494}
+2025-11-28 08:57:09.182 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320229.1821167}
+2025-11-28 08:57:14.188 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320234.187755}
+2025-11-28 08:57:19.193 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320239.1928089}
+2025-11-28 08:57:24.199 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320244.199268}
+2025-11-28 08:57:29.099 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:57:29.204 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320249.2037501}
+2025-11-28 08:57:34.209 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320254.208717}
+2025-11-28 08:57:39.216 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320259.2157502}
+2025-11-28 08:57:44.223 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320264.222916}
+2025-11-28 08:57:49.225 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320269.2251866}
+2025-11-28 08:57:54.228 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320274.228022}
+2025-11-28 08:57:59.102 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 08:57:59.235 | INFO     | [Sentry_manager.Sentry:_ping:47] | [Heartbeat] http://172.16.16.63:9992/v1/health returned non-ok: {'status': 'ok', 'timestamp': 1764320279.2349923}
+2025-11-28 09:07:08.605 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 09:07:08.605 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 09:07:08.607 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 09:07:08.608 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 09:07:08.612 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 09:07:37.539 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 09:07:38.442 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 09:07:38.429', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 09:07:38.608 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:08:08.610 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:08:38.613 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:09:08.615 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:09:38.618 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:10:08.621 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:10:38.624 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:11:08.627 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:11:38.630 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:12:08.632 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:12:38.635 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:12:57.963 | INFO     | [Sentry_manager.Sentry:_ping:54] | [Heartbeat] http://172.16.16.63:9992/v1/health FAILED ❌: Failed to perform, curl: (7) Failed to connect to 172.16.16.63 port 9992 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:31:36.242 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 09:31:36.242 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 09:31:36.243 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 09:31:36.244 | INFO     | [persistence.snap_manager:load_snapshot:178] | Loading snapshot snapshot_data [{'id': 0, 'key': None, 'value': None, 'decode_string': None, 'children': [1], 'version': 0}, {'id': 1, 'key': [0, 1, 2, 3], 'value': {'test_prefill_wzs': [1, 2, 3, 4]}, 'decode_string': None, 'children': [], 'version': 0}]
+2025-11-28 09:31:36.245 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 1 个 sentry 节点
+2025-11-28 09:31:36.250 | INFO     | [Sentry_manager.Sentry:_ping:54] | [Heartbeat] http://172.16.16.63:9992/v1/health FAILED ❌: Failed to perform, curl: (7) Failed to connect to 172.16.16.63 port 9992 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:32:06.244 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:32:36.247 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:33:06.250 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:33:36.252 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:34:06.256 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:34:36.259 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:35:06.261 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:35:36.264 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:36:06.267 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:36:36.270 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:37:06.273 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:37:36.275 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:38:06.278 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:38:36.281 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:39:06.283 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:39:36.286 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:40:06.289 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:40:36.291 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:41:06.294 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:41:36.297 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:42:25.297 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 09:42:25.297 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 09:42:25.299 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 09:42:25.300 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 09:42:25.305 | INFO     | [nexuts:_recover_from_db:201] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 09:42:55.300 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:43:25.303 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-11-28 09:43:52.416 | INFO     | [nexuts:register_instance:143] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 09:43:52.964 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 09:43:52.941', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 09:43:55.306 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:47:08.397 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 09:47:08.397 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-11-28 09:47:08.398 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-11-28 09:47:08.399 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-11-28 09:47:08.404 | INFO     | [nexuts:_recover_from_db:202] | [Recovery] 恢复了 0 个 sentry 节点
+2025-11-28 09:47:34.926 | INFO     | [nexuts:register_instance:144] | [Register] sentry=104369026, instance=test_prefill_wzs, type=prefill 注册成功
+2025-11-28 09:47:35.027 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-11-28 09:47:35.017', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 09:47:38.400 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-11-28 09:48:08.403 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1

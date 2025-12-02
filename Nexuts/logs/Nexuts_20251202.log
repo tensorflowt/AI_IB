@@ -1,0 +1,73 @@
+2025-12-02 09:25:10.912 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-12-02 09:25:10.912 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-12-02 09:25:10.914 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-12-02 09:25:10.914 | INFO     | [persistence.snap_manager:load_snapshot:170] | No snapshot found at /data/nexuts/snapshot_dir
+2025-12-02 09:25:10.920 | INFO     | [nexuts:_recover_from_db:202] | [Recovery] 恢复了 0 个 sentry 节点
+2025-12-02 09:25:33.840 | INFO     | [nexuts:register_instance:144] | [Register] sentry=104369026, instance=test_prefill_zwt, type=prefill 注册成功
+2025-12-02 09:25:34.105 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-12-02 09:25:34.092', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_zwt', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [], 'prompt_value': []}]}
+2025-12-02 09:25:40.915 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:25:42.945 | INFO     | [nexuts:register_instance:144] | [Register] sentry=104369026, instance=test_prefill_zwt, type=prefill 注册成功
+2025-12-02 09:26:10.917 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:26:40.920 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:27:10.923 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:27:40.926 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:28:10.929 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:28:40.932 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:29:10.935 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:29:40.937 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:30:10.940 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:30:40.943 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:31:10.946 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:31:40.949 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:32:10.952 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:32:40.955 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:33:10.957 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:33:32.486 | INFO     | [utils.logger:setup_logger:52] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-12-02 09:33:32.487 | INFO     | [__main__:main:21] | ==== Nexuts Service Starting ====
+2025-12-02 09:33:32.488 | INFO     | [nexuts:__init__:19] | Nexuts Config : {'snapshot_dir': '/data/nexuts/snapshot_dir', 'snapshot_interval_seconds': 30, 'WalManager_dir': '/data/nexuts/wal_dir', 'db_path': '/data/info_center.db', 'sentry_heartbeat_cycle': 5, 'resume': 1}
+2025-12-02 09:33:32.489 | INFO     | [persistence.snap_manager:load_snapshot:178] | Loading snapshot snapshot_data [{'id': 0, 'key': None, 'value': None, 'decode_string': None, 'children': [], 'version': 0}]
+2025-12-02 09:33:32.490 | INFO     | [nexuts:_recover_from_db:202] | [Recovery] 恢复了 1 个 sentry 节点
+2025-12-02 09:34:02.489 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:0 freeze_finish_version:0
+2025-12-02 09:34:21.722 | INFO     | [nexuts:register_instance:144] | [Register] sentry=104369026, instance=test_prefill_zwt, type=prefill 注册成功
+2025-12-02 09:34:22.479 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-12-02 09:34:22.463', 'sentry_ops_id': 1, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_zwt', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [], 'prompt_value': []}]}
+2025-12-02 09:34:32.492 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:34:53.389 | INFO     | [nexuts:register_instance:144] | [Register] sentry=104369026, instance=test_prefill_zwt, type=prefill 注册成功
+2025-12-02 09:35:02.495 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:35:32.498 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:36:02.501 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:36:32.504 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:37:02.507 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:37:32.510 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:38:02.513 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:38:32.516 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:39:02.519 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:39:32.522 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:40:02.535 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:40:32.538 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:41:02.541 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:41:32.544 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:42:02.547 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:42:32.549 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:43:02.553 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:43:32.556 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:44:02.559 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:44:32.562 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:45:02.565 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:45:32.569 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:46:02.572 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:46:32.575 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:47:02.578 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:47:32.581 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:48:02.584 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:48:32.587 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:49:02.590 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:49:32.594 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:50:02.598 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:50:32.602 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:51:02.605 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:51:32.608 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:52:02.611 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:52:32.614 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:53:02.617 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:1 freeze_finish_version:1
+2025-12-02 09:53:30.817 | INFO     | [Api.api:update_prefix_tree:52] | update prefix tree input:{'timestamp': '2025-12-02 09:53:30.549', 'sentry_ops_id': 2, 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_zwt', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}, {'instance_id': 'test_prefill_zwt', 'ops_id': 2, 'op_type': 'delete_node', 'prompt': [0, 1, 2, 3], 'length': 4}]}
+2025-12-02 09:53:32.621 | INFO     | [persistence.snap_manager:take_snapshot:131] | snapshot_trigger_version:3 freeze_finish_version:2

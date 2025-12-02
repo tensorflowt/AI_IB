@@ -1,0 +1,1079 @@
+2025-11-28 03:20:04.849 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:20:04.850 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 03:20:04.854 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 03:20:04.855 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 03:20:04.855 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 03:20:27.055 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 03:20:27.056 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 03:20:27.058 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 03:20:27.058 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 03:20:27.067 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 03:20:27.080 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T03:20:27.077523+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:20:27.080 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T03:20:27.077523+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:20:27.080 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 03:20:27.081 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T03:20:27.077523+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:20:27.082 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 03:20:27.082 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 03:20:27.083 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-28 03:20:27.083 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 03:20:32.060 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:20:37.067 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:20:42.072 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:20:47.079 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:20:52.086 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:20:57.091 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:21:02.098 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:21:07.105 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:24:14.047 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:24:14.047 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 03:24:14.052 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 03:24:14.053 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 03:24:14.053 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 03:24:46.281 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 03:24:46.281 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 03:24:46.289 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 03:24:46.290 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 03:24:46.303 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 03:24:46.315 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T03:24:46.310970+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:24:46.316 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T03:24:46.310970+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:24:46.316 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 03:24:46.317 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T03:24:46.310970+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:24:46.318 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 03:24:46.319 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 03:24:46.319 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-28 03:24:46.320 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 03:24:51.289 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:24:56.294 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:25:01.300 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:01.301 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:02.303 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:03.305 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:04.308 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:05.310 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:06.312 | INFO     | [PushWithNexuts.push_to_nexuts:set_status:176] | Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:06.313 | INFO     | [PushWithNexuts.push_to_nexuts:set_status:176] | Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:11.319 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:11.320 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:12.322 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:13.324 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:25:14.326 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:28:10.667 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:28:10.667 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 03:28:10.672 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 03:28:10.672 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 03:28:10.672 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 03:28:35.160 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 03:28:35.160 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 03:28:35.163 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 03:28:35.163 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 03:28:35.171 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 03:28:35.183 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T03:28:35.180594+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:28:35.183 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T03:28:35.180594+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:28:35.183 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 03:28:35.184 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T03:28:35.180594+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:28:35.184 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 03:28:35.185 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 03:28:35.185 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-28 03:28:35.186 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 03:28:40.165 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:28:45.172 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:28:50.179 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:28:50.180 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:28:51.181 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:35:34.708 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:35:34.708 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 03:35:34.713 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 03:35:34.713 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 03:35:34.714 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 03:35:35.715 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:36.716 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:37.718 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:38.719 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:39.720 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:40.722 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:41.723 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:42.725 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:43.726 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:44.727 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:45.729 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:46.730 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:47.730 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:48.732 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:49.733 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:50.734 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:51.736 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:52.737 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:53.739 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:54.740 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:55.742 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:56.743 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:57.745 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:58.746 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:35:59.747 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:36:00.034 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 03:36:00.035 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 03:36:00.037 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 03:36:00.037 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 03:36:00.045 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 03:36:00.055 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T03:36:00.052962+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:36:00.055 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T03:36:00.052962+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:36:00.055 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 03:36:00.056 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T03:36:00.052962+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:36:00.057 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 03:36:00.057 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 03:36:00.058 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-28 03:36:00.058 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 03:36:00.058 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:194] | add active callback info:{'ops_id': 1, 'timestamp': '2025-11-28T03:36:00.052962+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:36:00.749 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:36:01.750 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:36:02.752 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:36:03.753 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:36:04.754 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:36:05.041 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:36:05.756 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:36:06.757 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:36:07.758 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:36:08.760 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:19.612 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:40:19.612 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 03:40:19.615 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 03:40:19.615 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 03:40:19.615 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 03:40:19.617 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:40:20.617 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:21.618 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:22.620 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:28.510 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:40:28.510 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 03:40:28.516 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 03:40:28.516 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 03:40:28.516 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 03:40:29.518 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:30.520 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:31.521 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:32.523 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:33.524 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:34.526 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:35.527 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:36.528 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:37.530 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:38.531 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:39.532 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:40.534 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:41.535 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:42.537 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:43.538 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:44.539 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:45.540 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:46.542 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:47.544 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:48.545 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:49.546 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:50.548 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:51.549 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:52.550 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:53.552 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:53.564 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 03:40:53.565 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 03:40:53.567 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 03:40:53.567 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 03:40:53.576 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 03:40:53.585 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T03:40:53.582266+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:40:53.585 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T03:40:53.582266+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:40:53.585 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 03:40:53.586 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T03:40:53.582266+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:40:53.586 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 03:40:53.587 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 03:40:53.587 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | node is None?:False
+2025-11-28 03:40:53.587 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 03:40:53.587 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:194] | add active callback info:{'ops_id': 1, 'timestamp': '2025-11-28T03:40:53.582266+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:40:53.588 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 03:40:54.554 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 03:40:54.554', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 03:40:55.556 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 03:40:54.554', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 03:40:55.557 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:56.558 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:40:57.559 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:08.887 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 03:50:08.888 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 03:50:08.892 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 03:50:08.892 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 03:50:08.893 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 03:50:09.894 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:10.896 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:11.897 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:12.899 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:13.900 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:14.901 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:15.903 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:16.904 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:17.905 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:18.907 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:19.908 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:20.909 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:21.911 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:22.912 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:23.914 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:24.915 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:25.916 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:26.918 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:27.919 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:28.920 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:29.922 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:30.923 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:31.925 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:32.926 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:33.927 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:34.929 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:34.965 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 03:50:34.966 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 03:50:34.968 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 03:50:34.968 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 03:50:34.977 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 03:50:34.986 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T03:50:34.983692+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:50:34.986 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T03:50:34.983692+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:50:34.986 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 03:50:34.987 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T03:50:34.983692+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:50:34.988 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 03:50:34.988 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | insert node: [0, 1, 2, 3]
+2025-11-28 03:50:34.989 | INFO     | [KvCacheIndex.radix_tree:_insert_node:112] | node is None?:False
+2025-11-28 03:50:34.989 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 03:50:34.989 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] | 
+2025-11-28 03:50:34.989 | INFO     | [KvCacheIndex.radix_tree:_print_helper:54] | 0
+2025-11-28 03:50:34.989 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:194] | add active callback info:{'ops_id': 1, 'timestamp': '2025-11-28T03:50:34.983692+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 03:50:34.989 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 03:50:35.930 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 03:50:35.930', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 03:50:36.931 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 03:50:35.930', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 03:50:36.932 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:37.933 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:38.935 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:39.936 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:39.972 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 03:50:40.937 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:41.939 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:42.940 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:43.942 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:44.943 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:44.979 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:50:44.980 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 03:50:45.944 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 03:50:45.982 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:52:42.077 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 04:52:42.077 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 04:52:42.080 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 04:52:42.080 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 04:52:42.080 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 04:52:42.082 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:52:55.780 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 04:52:55.780 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 04:52:55.785 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 04:52:55.785 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 04:52:55.786 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 04:52:56.787 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:52:57.789 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:52:58.790 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:52:59.791 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:00.793 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:01.794 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:02.795 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:03.797 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:04.798 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:05.799 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:06.801 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:07.802 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:08.804 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:09.804 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:10.806 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:11.806 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:12.808 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:13.809 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:14.810 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:15.812 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:16.813 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:17.814 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:18.816 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:19.817 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:20.789 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 04:53:20.790 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 04:53:20.792 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 04:53:20.792 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 04:53:20.800 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 04:53:20.810 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T04:53:20.807798+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:53:20.810 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T04:53:20.807798+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:53:20.810 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 04:53:20.811 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T04:53:20.807798+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:53:20.812 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 04:53:20.812 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | insert node: [0, 1, 2, 3]
+2025-11-28 04:53:20.813 | INFO     | [KvCacheIndex.radix_tree:_insert_node:112] | node is None?:False
+2025-11-28 04:53:20.813 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 04:53:20.813 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] | 
+2025-11-28 04:53:20.813 | INFO     | [KvCacheIndex.radix_tree:_print_helper:54] | 0
+2025-11-28 04:53:20.813 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:194] | add active callback info:{'ops_id': 1, 'timestamp': '2025-11-28T04:53:20.807798+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:53:20.813 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 04:53:20.819 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:53:20.818', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:53:20.819 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:53:20.818', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:53:21.820 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:22.822 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:23.823 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:24.824 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:25.796 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:53:25.826 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:26.827 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:27.828 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:28.830 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:29.831 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:30.800 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:53:30.832 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:31.834 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:53:32.835 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:38.597 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 04:55:38.597 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 04:55:38.602 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 04:55:38.603 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 04:55:38.603 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 04:55:39.605 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:40.606 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:41.607 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:42.609 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:43.610 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:44.611 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:45.613 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:46.614 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:47.616 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:48.617 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:49.618 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:50.620 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:51.621 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:52.622 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:53.623 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:54.624 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:55.625 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:56.626 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:57.628 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:58.629 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:55:59.631 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:00.632 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:01.633 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:02.634 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:03.636 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:04.637 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:05.638 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:06.640 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:07.641 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:08.643 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:09.645 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:09.646 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 04:56:09.646 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 04:56:09.648 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 04:56:09.649 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 04:56:09.657 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 04:56:09.667 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T04:56:09.664262+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:56:09.667 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T04:56:09.664262+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:56:09.667 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 04:56:09.668 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T04:56:09.664262+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:56:09.668 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 04:56:09.669 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | insert node: [0, 1, 2, 3]
+2025-11-28 04:56:09.669 | INFO     | [KvCacheIndex.radix_tree:_insert_node:112] | node is None?:False
+2025-11-28 04:56:09.669 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 04:56:09.669 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] | 
+2025-11-28 04:56:09.670 | INFO     | [KvCacheIndex.radix_tree:_print_helper:54] | 0
+2025-11-28 04:56:09.670 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:194] | add active callback info:{'ops_id': 1, 'timestamp': '2025-11-28T04:56:09.664262+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:56:09.670 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 04:56:10.647 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:56:10.647', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:56:10.651 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:56:10.647', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:56:11.649 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:12.650 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:13.651 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:14.653 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:14.654 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:56:15.654 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:16.656 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:17.657 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:18.658 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:19.660 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:19.662 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:56:20.661 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:21.663 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:22.664 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:23.665 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:24.667 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:24.668 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:56:25.668 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:26.670 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:56:27.671 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:47.666 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 04:57:47.666 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 04:57:47.668 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 04:57:47.669 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 04:57:47.669 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 04:57:47.672 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:57:47.672 | INFO     | [Manager.register:load_from_sqlite:58] | http://127.0.0.1:9993/v1/pdserver/status
+2025-11-28 04:57:47.677 | INFO     | [Manager.register:load_from_sqlite:69] | tree info:{'ops_id': 1, 'ops_id_finished': 0, 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'server_port': 9993, 'tree': {'key': [], 'value': [], 'children': [{'key': [0, 1, 2, 3], 'value': [1, 2, 3, 4], 'children': []}]}}
+2025-11-28 04:57:47.677 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 04:57:47.677 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] | 
+2025-11-28 04:57:47.677 | INFO     | [KvCacheIndex.radix_tree:_print_helper:54] | 0
+2025-11-28 04:57:47.677 | INFO     | [KvCacheIndex.radix_tree:_print_helper:55] | []
+2025-11-28 04:57:47.677 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   
+2025-11-28 04:57:47.678 | INFO     | [KvCacheIndex.radix_tree:_print_helper:54] | 4
+2025-11-28 04:57:47.678 | INFO     | [KvCacheIndex.radix_tree:_print_helper:55] | [0, 1, 2, 3]
+2025-11-28 04:57:47.678 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 04:57:47.679 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 04:57:47.679 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 04:57:47.679 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_id': 'test_prefill_wzs', 'instance_type': 'prefill', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 04:57:47.680 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:144] | Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:48.671 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:49.673 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:50.136 | INFO     | [Manager.register:register:97] | Re-registering instance test_prefill_wzs, replacing info
+2025-11-28 04:57:50.137 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 04:57:50.137 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 04:57:50.138 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 04:57:50.138 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 04:57:50.139 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:144] | Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:50.139 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 04:57:50.152 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T04:57:50.149587+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:57:50.153 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T04:57:50.149587+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:57:50.153 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 04:57:50.154 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T04:57:50.149587+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:57:50.154 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 04:57:50.155 | INFO     | [KvCacheIndex.radix_tree:_insert_node:108] | insert node: [0, 1, 2, 3]
+2025-11-28 04:57:50.155 | INFO     | [KvCacheIndex.radix_tree:_insert_node:112] | node is None?:False
+2025-11-28 04:57:50.155 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 04:57:50.156 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] | 
+2025-11-28 04:57:50.156 | INFO     | [KvCacheIndex.radix_tree:_print_helper:54] | 0
+2025-11-28 04:57:50.156 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:194] | add active callback info:{'ops_id': 1, 'timestamp': '2025-11-28T04:57:50.149587+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 04:57:50.156 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 04:57:50.674 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:50.675 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:50.676 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:51.676 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:51.678 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:51.679 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:52.677 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:52.680 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:52.681 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:52.684 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:57:53.679 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:53.683 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:53.684 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:54.680 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:54.685 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:54.686 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:55.144 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:57:55.681 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:55.688 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:55.689 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:56.683 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:56.690 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:56.691 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:57.684 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:57.691 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:57:57.693 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:57.694 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:58.685 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:58.695 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:58.696 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:57:59.687 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:57:59.698 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:57:59.699 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:00.151 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:58:00.688 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:00.700 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:00.701 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:01.690 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:01.703 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:01.704 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:02.691 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:02.698 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:58:02.705 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:02.706 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:03.692 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:03.708 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:03.709 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:04.694 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:04.710 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:04.711 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:05.158 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:58:05.695 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:05.713 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:05.714 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:06.697 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:06.716 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:06.717 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:07.698 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:07.705 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:58:07.719 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:07.720 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:08.699 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:08.721 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:08.723 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:09.701 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:09.724 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:09.725 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:10.165 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:58:10.702 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:10.727 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:10.728 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:11.704 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:11.730 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:11.731 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:12.705 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:12.712 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 04:58:12.732 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:12.733 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 04:58:13.706 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 04:58:13.735 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 04:57:50.674', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 04:58:13.736 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:260] | push_to_nexuts error: Failed to perform, curl: (7) Failed to connect to 0.0.0.0 port 9991 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 06:54:57.397 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 06:54:57.397 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 06:54:57.402 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 06:54:57.403 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 06:54:57.403 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 06:54:58.404 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:54:59.406 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:00.407 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:01.409 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:02.410 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:03.411 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:04.413 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:05.414 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:06.415 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:07.417 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:08.418 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:09.420 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:10.421 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:11.422 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:12.424 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:13.425 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:14.426 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:15.428 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:16.429 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:17.430 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:18.431 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:19.433 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:20.434 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:21.436 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:22.437 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:23.438 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:24.440 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:25.441 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:26.442 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:27.444 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:28.445 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:29.446 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:30.448 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:31.449 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:32.451 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:33.452 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:34.453 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:35.454 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:36.456 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:37.457 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:38.458 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:39.460 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:40.075 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 06:55:40.075 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 06:55:40.079 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 06:55:40.079 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 06:55:40.087 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 06:55:40.094 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T06:55:40.091979+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 06:55:40.095 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T06:55:40.091979+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 06:55:40.095 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 06:55:40.095 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T06:55:40.091979+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 06:55:40.096 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 06:55:40.097 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 06:55:40.097 | INFO     | [KvCacheIndex.radix_tree:_insert_node:109] | node is None?:False
+2025-11-28 06:55:40.097 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 06:55:40.097 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   0  []
+2025-11-28 06:55:40.097 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |     4  [0, 1, 2, 3]
+2025-11-28 06:55:40.097 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:194] | add active callback info:{'ops_id': 1, 'timestamp': '2025-11-28T06:55:40.091979+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 06:55:40.098 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 06:55:40.098 | INFO     | [Manager.instance_manager:_process_update:81] | [InstanceManager] ops_id=1 finished
+2025-11-28 06:55:40.461 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 06:55:40.461', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 06:55:41.458 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 06:55:40.461', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 06:55:41.462 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:42.463 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:43.465 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:44.466 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:45.082 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:55:45.467 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:46.469 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:47.470 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:48.472 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:49.473 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:50.089 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:55:50.474 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:51.476 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:52.477 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:53.478 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:54.480 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:55.095 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:55:55.481 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:56.483 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:57.484 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:58.485 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:55:59.486 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:00.102 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:56:00.488 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:01.489 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:02.491 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:03.492 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:04.493 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:05.109 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:56:05.495 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:06.496 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:07.498 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:08.498 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:09.500 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:10.112 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:56:10.501 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:11.502 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:12.504 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:13.505 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:14.507 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:15.116 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:56:15.508 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:16.509 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:17.511 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:18.512 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:19.513 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:20.119 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:56:20.515 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:21.516 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:22.518 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:23.518 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:24.520 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:25.124 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:56:25.521 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:26.522 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:27.524 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:28.525 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:29.526 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:30.131 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 06:56:30.528 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:31.529 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:32.530 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:33.532 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:34.533 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:35.137 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 06:56:35.138 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 06:56:35.534 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:36.140 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 06:56:36.536 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:37.142 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 06:56:37.537 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:38.144 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 06:56:38.539 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:39.146 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 06:56:39.540 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:40.541 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:41.543 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:42.544 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 06:56:43.545 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:221] | flush to queue 为空
+2025-11-28 07:13:04.726 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 07:13:04.726 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 07:13:04.731 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 07:13:04.731 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 07:13:04.732 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 07:13:30.618 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 07:13:30.619 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 07:13:30.622 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 07:13:30.622 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 07:13:30.632 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 07:13:30.645 | INFO     | [ApiServer.api_server:update_node:44] | update radixtree:{'ops_id': 1, 'timestamp': '2025-11-28T07:13:30.642671+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 07:13:30.645 | INFO     | [Manager.instance_manager:update_tree:36] | update info: {'ops_id': 1, 'timestamp': '2025-11-28T07:13:30.642671+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 07:13:30.645 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 07:13:30.646 | INFO     | [Manager.instance_manager:_consumer_loop:52] | [Consumer] Received ops_id=1   and  update_info={'ops_id': 1, 'timestamp': '2025-11-28T07:13:30.642671+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 07:13:30.646 | INFO     | [Manager.instance_manager:_process_update:72] | op:{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}
+2025-11-28 07:13:30.647 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 07:13:30.648 | INFO     | [KvCacheIndex.radix_tree:_insert_node:109] | node is None?:False
+2025-11-28 07:13:30.648 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 07:13:30.648 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   0  []
+2025-11-28 07:13:30.648 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |     4  [0, 1, 2, 3]
+2025-11-28 07:13:30.648 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:194] | add active callback info:{'ops_id': 1, 'timestamp': '2025-11-28T07:13:30.642671+00:00', 'node_ip': '172.16.16.63', 'server_port': 9993, 'instance_id': 'test_prefill_wzs', 'info': [{'op_type': 'insert_node', 'parent_path': [], 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4], 'insert_key': [0, 1, 2, 3], 'insert_value': [1, 2, 3, 4], 'split_length': 0, 'depth': 1}]}
+2025-11-28 07:13:30.648 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 07:13:30.648 | INFO     | [Manager.instance_manager:_process_update:81] | [InstanceManager] ops_id=1 finished
+2025-11-28 07:13:30.758 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 07:13:30.758', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 07:13:30.764 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 07:13:30.758', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 07:13:35.624 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 07:13:35.625 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 08:50:41.607 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 08:50:41.607 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 08:50:41.610 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 08:50:41.610 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 08:50:41.610 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 08:50:41.612 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 08:50:52.843 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 08:50:52.844 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 08:50:52.848 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 08:50:52.849 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 08:50:52.849 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 08:51:23.753 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 08:51:23.753 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 08:51:23.756 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 08:51:23.756 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 08:51:23.764 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 08:51:23.775 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 08:51:23.776 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 08:51:23.776 | INFO     | [KvCacheIndex.radix_tree:_insert_node:109] | node is None?:False
+2025-11-28 08:51:23.776 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 08:51:23.776 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   0  []
+2025-11-28 08:51:23.776 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |     4  [0, 1, 2, 3]
+2025-11-28 08:51:23.777 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 08:51:23.777 | INFO     | [Manager.instance_manager:_process_update:81] | [InstanceManager] ops_id=1 finished
+2025-11-28 08:51:23.880 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 08:51:23.880', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 08:51:23.888 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 08:51:23.880', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 08:51:28.760 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:51:33.766 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:51:38.773 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:51:43.779 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:51:48.787 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:51:53.792 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:51:58.799 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:03.806 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:08.809 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:13.817 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:18.824 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:23.831 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:28.838 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:33.845 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:38.852 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:43.859 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:48.866 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:53.873 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:52:58.880 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:03.888 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:08.892 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:13.899 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:18.906 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:23.910 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:28.916 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:33.922 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:38.929 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:43.934 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:48.941 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:53.948 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:53:58.955 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:03.962 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:08.968 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:13.974 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:18.979 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:23.985 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:28.992 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:33.996 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:39.002 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:44.010 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:49.016 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:54.023 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:54:59.030 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:04.037 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:09.045 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:14.052 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:19.060 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:24.067 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:29.074 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:34.081 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:39.085 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:44.092 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:49.099 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:54.106 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:55:59.109 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:04.116 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:09.123 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:14.130 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:19.138 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:24.145 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:29.149 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:34.156 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:39.163 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:44.170 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:49.177 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:54.184 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:56:59.188 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:04.193 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:09.200 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:14.205 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:19.208 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:24.216 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:29.220 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:34.227 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:39.233 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:44.238 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:49.245 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:54.252 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 08:57:59.259 | INFO     | [Manager.register:_check_health_once:182] | instance_id:test_prefill_wzs  url:http://127.0.0.1:9993/v1/pdserver/health  health_result   status_code:200
+2025-11-28 09:07:04.391 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 09:07:04.391 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 09:07:04.396 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 09:07:04.396 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 09:07:04.396 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 09:07:37.528 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 09:07:37.529 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 09:07:37.532 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 09:07:37.532 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 09:07:37.540 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 09:07:37.551 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 09:07:37.552 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 09:07:37.552 | INFO     | [KvCacheIndex.radix_tree:_insert_node:109] | node is None?:False
+2025-11-28 09:07:37.552 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 09:07:37.552 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   0  []
+2025-11-28 09:07:37.552 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |     4  [0, 1, 2, 3]
+2025-11-28 09:07:37.553 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 09:07:37.553 | INFO     | [Manager.instance_manager:_process_update:81] | [InstanceManager] ops_id=1 finished
+2025-11-28 09:07:38.429 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 09:07:38.429', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 09:07:38.440 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 09:07:38.429', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 09:12:47.878 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:12:47.880 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:12:48.881 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:12:49.883 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:12:50.886 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:12:51.887 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:12:52.894 | INFO     | [Manager.register:remove:121] | [Registry] Removed instance test_prefill_wzs
+2025-11-28 09:12:52.898 | INFO     | [PushWithNexuts.push_to_nexuts:deal_loss_pod:162] | name 'instace_id' is not defined
+2025-11-28 09:31:43.957 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 09:31:43.957 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 09:31:43.960 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 09:31:43.960 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 09:31:43.960 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 09:42:22.845 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 09:42:22.845 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 09:42:22.851 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 09:42:22.851 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 09:42:22.851 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 09:43:52.405 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 09:43:52.405 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 09:43:52.408 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 09:43:52.409 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 09:43:52.418 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 09:43:52.429 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 09:43:52.431 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 09:43:52.431 | INFO     | [KvCacheIndex.radix_tree:_insert_node:109] | node is None?:False
+2025-11-28 09:43:52.431 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 09:43:52.431 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   0  []
+2025-11-28 09:43:52.431 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |     4  [0, 1, 2, 3]
+2025-11-28 09:43:52.431 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 09:43:52.432 | INFO     | [Manager.instance_manager:_process_update:81] | [InstanceManager] ops_id=1 finished
+2025-11-28 09:43:52.941 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 09:43:52.941', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 09:43:52.962 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 09:43:52.941', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 09:44:02.416 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:44:02.417 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:44:03.419 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:44:04.422 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:44:05.424 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:44:06.426 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:44:07.433 | INFO     | [Manager.register:remove:121] | [Registry] Removed instance test_prefill_wzs
+2025-11-28 09:47:02.979 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-11-28 09:47:02.979 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-11-28 09:47:02.984 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-11-28 09:47:02.985 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-11-28 09:47:02.985 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-11-28 09:47:34.915 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-11-28 09:47:34.915 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_wzs
+2025-11-28 09:47:34.918 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-11-28 09:47:34.918 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_wzs', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-11-28 09:47:34.927 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_wzs registered and manager started.
+2025-11-28 09:47:34.937 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-11-28 09:47:34.938 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-11-28 09:47:34.938 | INFO     | [KvCacheIndex.radix_tree:_insert_node:109] | node is None?:False
+2025-11-28 09:47:34.938 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-11-28 09:47:34.939 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   0  []
+2025-11-28 09:47:34.939 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |     4  [0, 1, 2, 3]
+2025-11-28 09:47:34.939 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-11-28 09:47:34.939 | INFO     | [Manager.instance_manager:_process_update:81] | [InstanceManager] ops_id=1 finished
+2025-11-28 09:47:35.017 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 09:47:35.017', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 09:47:35.024 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-11-28 09:47:35.017', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_wzs', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}]}
+2025-11-28 09:47:39.921 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:47:39.922 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:47:40.923 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:47:41.925 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:47:42.927 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:47:43.929 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_wzs) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-11-28 09:47:44.933 | INFO     | [Manager.register:remove:121] | [Registry] Removed instance test_prefill_wzs

@@ -1,0 +1,86 @@
+2025-12-02 09:24:45.081 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-12-02 09:24:45.081 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-12-02 09:24:45.086 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-12-02 09:24:45.087 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-12-02 09:24:45.087 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-12-02 09:25:33.830 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-12-02 09:25:33.831 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_zwt
+2025-12-02 09:25:33.833 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-12-02 09:25:33.833 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_zwt', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-12-02 09:25:33.841 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_zwt registered and manager started.
+2025-12-02 09:25:33.854 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-12-02 09:25:33.855 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-12-02 09:25:33.856 | INFO     | [KvCacheIndex.radix_tree:_insert_node:109] | node is None?:False
+2025-12-02 09:25:33.856 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-12-02 09:25:33.856 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   0  []
+2025-12-02 09:25:33.856 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |     4  [0, 1, 2, 3]
+2025-12-02 09:25:33.856 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-12-02 09:25:33.856 | INFO     | [Manager.instance_manager:_process_update:81] | [InstanceManager] ops_id=1 finished
+2025-12-02 09:25:34.092 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-12-02 09:25:34.092', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_zwt', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [], 'prompt_value': []}]}
+2025-12-02 09:25:34.102 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-12-02 09:25:34.092', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_zwt', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [], 'prompt_value': []}]}
+2025-12-02 09:25:42.940 | INFO     | [Manager.register:register:97] | Re-registering instance test_prefill_zwt, replacing info
+2025-12-02 09:25:42.941 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-12-02 09:25:42.941 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_zwt
+2025-12-02 09:25:42.944 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-12-02 09:25:42.944 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_zwt', 'node_ip': '127.0.0.1', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-12-02 09:25:42.946 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_zwt registered and manager started.
+2025-12-02 09:33:26.454 | INFO     | [utils.logger:setup_logger:51] | Logger initialized -> level=INFO, dir=./logs, rotation=200 MB, retention=30 days
+2025-12-02 09:33:26.454 | INFO     | [__main__:main:21] | ==== Sentry Service Starting ====
+2025-12-02 09:33:26.457 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:50] | Nexuts & Redis Config:
+  nexuts_register_api_url: http://0.0.0.0:9991/v1/Nexuts/register
+  nexuts_update_api_url: http://0.0.0.0:9991/v1/Nexuts/update_prefix_tree
+  nexuts_deregister_api_url: http://0.0.0.0:9991/v1/Nexuts/deregister
+  set_status_api_url: http://0.0.0.0:9991/v1/Nexuts/set_status
+  send_nexuts_cycle: 1
+  redis_host: 127.0.0.1
+  redis_port: 6380
+  redis_db: 0
+  redis_clear: 1
+
+2025-12-02 09:33:26.458 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:79] | ops_id_sentry: 0
+2025-12-02 09:33:26.458 | INFO     | [PushWithNexuts.push_to_nexuts:__init__:81] | ops_id_sentry_finish: 0
+2025-12-02 09:33:26.460 | WARNING  | [Manager.register:_check_health_once:186] | [HealthCheck] (test_prefill_zwt) health check failed: Failed to perform, curl: (7) Failed to connect to 127.0.0.1 port 9993 after 0 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-12-02 09:34:21.714 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-12-02 09:34:21.715 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_zwt
+2025-12-02 09:34:21.717 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-12-02 09:34:21.718 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_zwt', 'node_ip': '172.16.16.63', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-12-02 09:34:21.724 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_zwt registered and manager started.
+2025-12-02 09:34:21.736 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-12-02 09:34:21.738 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-12-02 09:34:21.738 | INFO     | [KvCacheIndex.radix_tree:_insert_node:109] | node is None?:False
+2025-12-02 09:34:21.738 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-12-02 09:34:21.738 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   0  []
+2025-12-02 09:34:21.738 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |     4  [0, 1, 2, 3]
+2025-12-02 09:34:21.739 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-12-02 09:34:21.739 | INFO     | [Manager.instance_manager:_process_update:81] | [InstanceManager] ops_id=1 finished
+2025-12-02 09:34:22.463 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 1, 'timestamp': '2025-12-02 09:34:22.463', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_zwt', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [], 'prompt_value': []}]}
+2025-12-02 09:34:22.476 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:1  item:{'sentry_ops_id': 1, 'timestamp': '2025-12-02 09:34:22.463', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_zwt', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [], 'prompt_value': []}]}
+2025-12-02 09:34:53.384 | INFO     | [Manager.register:register:97] | Re-registering instance test_prefill_zwt, replacing info
+2025-12-02 09:34:53.385 | INFO     | [Manager.register:_health_check_loop:133] | http://127.0.0.1:9993/v1/pdserver/health
+2025-12-02 09:34:53.385 | INFO     | [Manager.register:_start_heartbeat_check:176] | [Registry] Started health thread for test_prefill_zwt
+2025-12-02 09:34:53.388 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:134] | execute register_pod_to_nexuts
+2025-12-02 09:34:53.388 | INFO     | [PushWithNexuts.push_to_nexuts:register_pod_to_nexuts:137] | register info:{'instance_type': 'prefill', 'instance_id': 'test_prefill_zwt', 'node_ip': '127.0.0.1', 'service_port': 9993, 'tp_size': 1, 'base_gpu_id': 6, 'step': 1, 'sentry_id': '104369026', 'sentry_port': 9992}
+2025-12-02 09:34:53.390 | INFO     | [ApiServer.api_server:register_inference:36] | Instance test_prefill_zwt registered and manager started.
+2025-12-02 09:53:30.266 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=1
+2025-12-02 09:53:30.269 | INFO     | [KvCacheIndex.radix_tree:_insert_node:105] | insert node: [0, 1, 2, 3]
+2025-12-02 09:53:30.269 | INFO     | [KvCacheIndex.radix_tree:_insert_node:109] | node is None?:False
+2025-12-02 09:53:30.269 | INFO     | [KvCacheIndex.radix_tree:_print_helper:48] | execute _print_helper
+2025-12-02 09:53:30.270 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |   0  []
+2025-12-02 09:53:30.270 | INFO     | [KvCacheIndex.radix_tree:_print_helper:53] |     4  [0, 1, 2, 3]
+2025-12-02 09:53:30.270 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-12-02 09:53:30.270 | INFO     | [Manager.instance_manager:_process_update:81] | [InstanceManager] ops_id=1 finished
+2025-12-02 09:53:30.271 | INFO     | [Manager.instance_manager:update_tree:39] | [Producer] Received ops_id=2
+2025-12-02 09:53:30.272 | INFO     | [PushWithNexuts.push_to_nexuts:add_active_callback:211] | add active callback done
+2025-12-02 09:53:30.272 | INFO     | [KvCacheIndex.radix_tree:_delete_node:147] | node is None?:False
+2025-12-02 09:53:30.549 | INFO     | [PushWithNexuts.push_to_nexuts:_flush_to_queue:231] | flush to queue:{'sentry_ops_id': 2, 'timestamp': '2025-12-02 09:53:30.549', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_zwt', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}, {'instance_id': 'test_prefill_zwt', 'ops_id': 2, 'op_type': 'delete_node', 'prompt': [0, 1, 2, 3], 'length': 4}]}
+2025-12-02 09:53:30.814 | INFO     | [PushWithNexuts.push_to_nexuts:_try_send_one:250] | sentry_ops_id:2  item:{'sentry_ops_id': 2, 'timestamp': '2025-12-02 09:53:30.549', 'sentry_id': '104369026', 'updates': [{'instance_id': 'test_prefill_zwt', 'ops_id': 1, 'op_type': 'insert_node', 'prompt': [0, 1, 2, 3], 'prompt_value': [1, 2, 3, 4]}, {'instance_id': 'test_prefill_zwt', 'ops_id': 2, 'op_type': 'delete_node', 'prompt': [0, 1, 2, 3], 'length': 4}]}
