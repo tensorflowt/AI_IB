@@ -64,3 +64,45 @@ class APIServer:
             """简单健康检测"""
             return JSONResponse({"status": "ok"})
 
+        @app.get("/v1/Nexuts/get_best_instance")  
+        async def get_best_instance():  
+            """基于加权metrics获取最佳实例"""  
+
+            # 添加调试信息  
+            logger.info(f"instances_status: {self.info_center.instances_status}")  
+            logger.info(f"instances_metrics: {self.info_center.instances_metrics}")  
+              
+            # 获取所有可用实例的metrics  
+            available_instances = []  
+              
+            for instance_id, status in self.info_center.instances_status.items():  
+                if not status:  # 跳过不可用的实例  
+                    continue  
+                      
+                metrics = await self.info_center.get_instance_metrics(instance_id)  
+                if metrics:  
+                    available_instances.append({  
+                        "instance_id": instance_id,  
+                        "weighted_load": metrics["weighted_load"],  
+                        "prealloc_queue": metrics["prealloc_queue"],  
+                        "infight_queue": metrics["infight_queue"]  
+                    })  
+              
+            if not available_instances:  
+                return {"instance_id": None, "message": "No available instances"}  
+              
+            # 添加tie-breaking：先按加权负载排序，再按instance_id字典序  
+            best_instance = min(  
+                available_instances,   
+                key=lambda x: (x["weighted_load"], x["instance_id"])  
+            )   
+              
+            return {  
+                "instance_id": best_instance["instance_id"],  
+                "load_info": {  
+                    "weighted_load": best_instance["weighted_load"],  
+                    "prealloc_queue": best_instance["prealloc_queue"],  
+                    "infight_queue": best_instance["infight_queue"],  
+                    "formula": "prealloc_queue * 0.3 + inflight_queue * 0.7"  
+                }  
+            }

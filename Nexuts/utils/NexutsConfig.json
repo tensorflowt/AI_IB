@@ -4,5 +4,9 @@
   "WalManager_dir": "/data/nexuts/wal_dir",
   "db_path": "/data/info_center.db",
   "sentry_heartbeat_cycle": 5,
-  "resume": 1
+  "resume": 1,
+  "load_balancing_weights": {  
+    "prealloc": 0.3,  
+    "inflight": 0.7  
+  }  
 }

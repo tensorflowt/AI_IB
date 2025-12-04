@@ -30,12 +30,15 @@ class SnapshotManager:
         self._thread = None
         os.makedirs(snapshot_dir, exist_ok=True)
         self.start_auto_snapshot()
-        if resume:
-            self.load_snapshot()
-            wal_recover = self.wal_manager.load_resume_records() # 加载wal日志
-            for ops_info in wal_recover:
-                #TODO 看ops格式
-                self.tree.update_prefix_tree(ops_info, write_wal=False) # 不写wal了
+        if resume:  
+            self.load_snapshot()  
+            wal_recover = self.wal_manager.load_resume_records() # 加载wal日志  
+            for ops_info in wal_recover:  
+                # 将WAL记录包装成update_prefix_tree期望的格式  
+                wrapped_ops_info = {  
+                    "updates": [ops_info]  # WAL记录包装在updates列表中  
+                }  
+                self.tree.update_prefix_tree(wrapped_ops_info, write_wal=False) # 不写wal了
 
 
     def _snapshot_filename(self) -> str:
@@ -129,7 +132,7 @@ class SnapshotManager:
 
             # 将log.logs的 snapshot_trigger_version - freeze_finish_version 行，重定向输入到 log2.logs 里面
             logger.info("snapshot_trigger_version:{} freeze_finish_version:{}".format(snapshot_trigger_version, freeze_finish_version))
-            self.wal_manager.rotate(snapshot_trigger_version - freeze_finish_version)  # 更换记录文件，同时记录在执行快照期间发生的变更
+            self.wal_manager.rotate(line_n=snapshot_trigger_version - freeze_finish_version)  # 更换记录文件，同时记录在执行快照期间发生的变更
 
             filename = self._snapshot_filename()
             temp_path = self._snapshot_path(filename + ".tmp")

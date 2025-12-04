@@ -23,7 +23,11 @@ class Sentry:
         self.thread.start()
 
     def start_heartbeat(self):
-        self.thread.start()
+        """启动或重启心跳检测线程"""  
+        if not hasattr(self, 'thread') or not self.thread.is_alive():  
+            # 创建新线程  
+            self.thread = threading.Thread(target=self._heartbeat_loop, daemon=True)  
+            self.thread.start()
 
     def _heartbeat_loop(self):
         """后台线程执行心跳检测"""

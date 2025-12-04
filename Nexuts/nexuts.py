@@ -10,6 +10,7 @@ from Sentry_manager.Sentry import Sentry
 from persistence.snap_manager import SnapshotManager
 from persistence.walmanager import WalManager
 from persistence.sqlite_storage import SQLiteStorage
+from utils.metrics_collector import InstanceMetricsCollector
 
 
 class InformationCenter:
@@ -24,8 +25,24 @@ class InformationCenter:
 
         self.lock_instances = threading.Lock()
         self.lock_sentry_instance = threading.Lock()
-        # 初始化SnapshotManager、WalManager
 
+        # 添加metrics相关字段  
+        self.instances_metrics: Dict[str, Dict[str, float]] = {}  
+        self.lock_metrics = threading.Lock()  
+          
+        # 从配置中读取权重  
+        self.load_balancing_weights = nexuts_config.get("load_balancing_weights", {  
+            "prealloc": 0.3,  
+            "inflight": 0.7  
+        })  
+          
+        # 初始化metrics收集器  
+        self.metrics_collector = InstanceMetricsCollector(  
+            prealloc_weight=self.load_balancing_weights["prealloc"],  
+            inflight_weight=self.load_balancing_weights["inflight"]  
+        )
+
+        # 初始化SnapshotManager、WalManager
         wal_manager_path = nexuts_config.get('WalManager_dir', "/data/nexuts/wal_dir")
         snapshot_dir = nexuts_config.get("snapshot_dir", "/data/snapshots") # "/data/snapshots"
         snapshot_interval_seconds = nexuts_config.get("snapshot_interval_seconds", 600) # 10分钟一次
@@ -53,7 +70,44 @@ class InformationCenter:
             self.db.clear_all() # 清除
         # TODO 恢复树从 wal和snapshot里面
 
-
+    async def get_instance_metrics(self, instance_id: str) -> Optional[Dict[str, float]]:  
+        """获取实例的实时metrics"""  
+        if instance_id not in self.instances_status:  
+            return None  
+              
+        # 从sentry_instance中获取实例信息  
+        instance_info = None  
+        for sentry_id, sentry in self.sentry_instance.items():  
+            if instance_id in sentry.prefill_list:  
+                instance_info = sentry.prefill_list[instance_id]  
+                break  
+            elif instance_id in sentry.decode_list:  
+                instance_info = sentry.decode_list[instance_id]  
+                break  
+                  
+        if not instance_info:  
+            return None  
+              
+        instance_ip = instance_info.get("node_ip", "127.0.0.1")  
+        service_port = instance_info.get("service_port")  
+          
+        if not service_port:  
+            return None  
+              
+        metrics = await self.metrics_collector.get_instance_load(instance_ip, service_port)  
+          
+        with self.lock_metrics:  
+            if metrics:  
+                self.instances_metrics[instance_id] = metrics  
+            else:  
+                # 获取失败时使用缓存或默认值  
+                metrics = self.instances_metrics.get(instance_id, {  
+                    "prealloc_queue": 0,  
+                    "infight_queue": 0,   
+                    "weighted_load": 0  
+                })  
+                  
+        return metrics
 
     def call_back_function(self, sentry_id):
         """
@@ -140,6 +194,15 @@ class InformationCenter:
         # 设置状态可用
         with self.lock_instances:
             self.instances_status[instance_id] = True
+        
+        # 初始化metrics
+        with self.lock_metrics:  
+            self.instances_metrics[instance_id] = {  
+                "prealloc_queue": 0,  
+                "infight_queue": 0,  
+                "weighted_load": 0  
+            }  
+
         # 持久化实例
         logger.info(f"[Register] sentry={sentry_id}, instance={instance_id}, type={pod_type} 注册成功")
         return {"result": "ok"}
